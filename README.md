@@ -3,7 +3,7 @@ pulls git repos for foreign pacman packages and installs them via `makepkg -sic`
 
 I made this because I needed it
 
-Works on Arch, untested on everything else
+Works on Arch (fetching packages from AUR), untested on everything else
 
 If you clone git repositories to acquire foreign packages, there's a chance you'll find the script useful
 
