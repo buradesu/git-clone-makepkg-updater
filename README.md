@@ -12,10 +12,10 @@ You need to have all your cloned repos in one folder, or this won't work
 Click on `updater.sh` above and download the raw file.
 Alternatively, you can `git clone` the repo, but you'll have to take the script out of its directory regardless
 #### 2: move the bash script to the directory with the repo clones
-`mv /download/path/updater.sh /path/to/the/direcory/with/repo/clones/updater.sh`
+`mv /download/path/updater.sh /repo/clones/direcory/updater.sh`
 #### 3: make it executable
-`chmod u+x /path/to/the/direcory/with/repo/clones/updater.sh`
+`chmod u+x /repo/clones/direcory/updater.sh`
 #### 4: run it
-`/path/to/the/direcory/with/repo/clones/updater.sh`
+`/repo/clones/direcory/updater.sh`
 
 
