@@ -43,7 +43,7 @@ do
 	fi
 
 	# try to make a git pull
-	pullRes=$(git pull);
+	pullRes=$(git pull 2>&1);
 	
 	# print the output of git pull
 	echo $pullRes
@@ -54,6 +54,10 @@ do
 	then
 	echo -e "${GREEN}skipping ${directory}: up to date${RESET}" 
 	
+	elif [[ $pullRes == *"unable to access"* ]]
+	then # if can't access the repo, skip
+	echo -e "${GREY}Can't access the repository for pulling, skipping${RESET}"
+
 	# if something was pulled, update and install
 	else
 	echo -e "${MAGENTA} updating ${directory}...${RESET}"
